@@ -133,8 +133,82 @@ for(const letter of myStr){
 
 */
 
+/*
+
 const myArray = [1, true, "Dima", null, false];
 
 for (const element of myArray){
     console.log(element);
 }
+
+*/
+
+const people = [
+    {name: "Dima", age : 20 },
+    {name: "Alice", age: 25 },
+    {name: "Anna", age: 15 },
+    {name: "Alex", age: 24 },
+    {name: "John", age: 30 },
+    {name: "Fil", age: 50 }
+]
+
+/*
+
+for (element of people){
+    console.log(element);
+}
+
+*/
+
+
+
+/*
+
+people.forEach((person, index) => {
+    //console.log(person);
+    console.log(`${person.name} has index ${index}`)
+})
+
+
+
+/*
+
+const newPeople = people.map((person) => {
+    console.log(person);
+});
+
+*/
+
+/*
+
+const adults = people.filter((person) => {
+    if (person.age >=21 ){
+        return true
+    }
+});
+console.log(adults);
+
+*/
+
+/*
+
+const adults = people.filter(person => person.age >= 21);
+console.log(adults);
+
+*/
+
+
+//const Dima =  people.find(person => person.name === "Dima");
+//console.log(Dima);
+
+/*
+
+const indexDima =  people.findIndex(person => person.name === "Dima");
+console.log(indexDima);
+
+const indexAnna =  people.findIndex(person => person.name === "Anna");
+console.log(indexAnna);
+
+*/
+
+
